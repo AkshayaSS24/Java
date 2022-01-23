@@ -1,0 +1,44 @@
+
+
+
+
+public class Employees {
+	String name;
+	int year;
+	String address;
+	
+	public void details(){
+		System.out.println(name+ "\t\t" + year+ "\t\t\t\t" + address);
+	}
+	
+
+
+	public static void main(String[] args) 
+	{
+		Employees e1 = new Employees();
+		Employees e2 = new Employees();
+		Employees e3 = new Employees();
+        
+		e1.name = "Robert";
+		e1.year = 1994;
+		e1.address = "64C-WallsStreet";
+		
+		e2.name = "Sam";
+		e2.year = 2000;
+		e2.address = "68D-WallsStreet";
+		
+		e3.name = "John";
+		e3.year = 1999;
+		e3.address = "26B-WallsStreet";
+		System.out.println("Name \t\t Year of Joining \t\t Address");
+		System.out.println();
+		
+		e1.details();
+		e2.details();
+		e3.details();
+		
+		
+			
+	}
+
+	}
