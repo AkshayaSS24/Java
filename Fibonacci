@@ -1,0 +1,36 @@
+
+
+import java.util.Scanner;
+public class Fibonacci {
+	 public static int a=0,b=1,c=0;
+	public static  void print(int n)
+	{
+		
+		while(n>0)
+		{
+			c=a+b;
+			a=b;
+			b=c;
+			System.out.println(c);
+			n--;
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Fibonacci Series...");
+		
+		System.out.println("Enter the count: ");
+		int n = scan.nextInt();
+		scan.close();
+		System.out.println("0"+ "\n"+ "1");
+		print(n);
+		
+	
+	}
+}
